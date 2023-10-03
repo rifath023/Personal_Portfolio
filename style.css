@@ -111,7 +111,7 @@ nav footer p{
 
 /* nav part ended here  */
 section{
-    margin-left: 18%;
+    margin-left: 20%;
     height: 100vh;
     width: 400vh;
 }
@@ -129,10 +129,86 @@ section{
 .home span{
     font-weight: 700;
 }
-.home h1{
+.home .left h1{
+    color: #141313;
+    font-family: IBM Plex Sans;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 88.235% */
+    text-transform: uppercase;
+}
+.home .left p span{
+    color: #141313;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 32px; /* 100% */
+    letter-spacing: -0.96px;
+}
+.home .left p{
+    color: #141313;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.96px;
+}
+.home .left button{
+    display: inline-flex;
+    height: 56px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    background: #141313;
+    color: #fff;
 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+
+    margin: 50px 0;
 }
 
+.home .left .contact a svg{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background-color: rgba(20, 19, 19, 0.05);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.home .left .contact a{
+    margin-right: 40px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  
+    color: #141313;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+.home h1::after{
+    position: absolute;
+    left: 1%;
+    top: 20px;
+    content: '';
+    width: 248.996px;
+    height: 60.823px;
+    transform: rotate(-30.065deg);
+    flex-shrink: 0;
+    fill: linear-gradient(270deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+    border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%
+                    
+}
 
 .right img{
  width: 400px;
