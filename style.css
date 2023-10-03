@@ -124,7 +124,6 @@ section{
 }
 .common-side{
     width: 450px;
-    border: 1px solid black;
 }
 .home span{
     font-weight: 700;
@@ -132,11 +131,12 @@ section{
 .home .left h1{
     color: #141313;
     font-family: IBM Plex Sans;
-    font-size: 70px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 88.235% */
+    line-height: 70px; /* 88.235% */
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .home .left p span{
     color: #141313;
@@ -144,7 +144,7 @@ section{
     font-size: 20px;
     font-style: italic;
     line-height: 32px; /* 100% */
-    letter-spacing: -0.96px;
+    letter-spacing: 2px;
 }
 .home .left p{
     color: #141313;
@@ -168,12 +168,19 @@ section{
 
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px; /* 133.333% */
+    cursor: pointer;
+    margin: 40px 0;
+    border: none;
+    transition: all 0.3s linear;
 
-    margin: 50px 0;
+    border-radius: 10px;
 }
-
+.home .left button:hover{
+    background: linear-gradient(90deg, rgb(255, 0, 230) 0%, orange 32%);
+    color: black;
+}
 .home .left .contact a svg{
     width: 30px;
     height: 30px;
@@ -213,11 +220,27 @@ section{
 .right img{
  width: 400px;
 }
-
+.home .icon {
+    margin-top: -120px;
+    margin-right: 20px;
+    position: relative;
+}
 .home .icon a{
     width: 30px;
     height: 30px;
     font-size: 18px;
     color: #141313;
+}
+.home .icon::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #141313;
+    opacity: 0.3;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -25px;
+    top: 175px;
+    
 }
 /* home part end */
