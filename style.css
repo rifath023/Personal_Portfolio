@@ -13,7 +13,7 @@ body{
 }
 /* nav part started from here  */
 nav{
-    width: 18%;
+    width: 16%;
     height: 100%;
     position: fixed;
     border-right: 1px solid rgba(220, 220, 220, 0.1);
@@ -137,7 +137,21 @@ section{
     line-height: 70px; /* 88.235% */
     text-transform: uppercase;
     margin-bottom: 15px;
+    position: relative;
 }
+.home h1::after{
+    position: absolute;
+    left: -4%;
+    top: 23%;
+    content: '';
+    width: 165px;
+    height: 40px;
+    transform: rotate(-30.065deg);
+    background: linear-gradient(270deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+    border-radius: 27% 27% 50% 50% / 0% 0% 100% 100%;
+    z-index: -1;
+}
+
 .home .left p span{
     color: #141313;
     font-family: IBM Plex Sans;
@@ -203,19 +217,6 @@ section{
     font-weight: 700;
     line-height: 24px; /* 133.333% */
 }
-.home h1::after{
-    position: absolute;
-    left: 1%;
-    top: 20px;
-    content: '';
-    width: 248.996px;
-    height: 60.823px;
-    transform: rotate(-30.065deg);
-    flex-shrink: 0;
-    fill: linear-gradient(270deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
-    border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%
-                    
-}
 
 .right img{
  width: 400px;
@@ -233,14 +234,14 @@ section{
 }
 .home .icon::after{
     content: '';
-    width: 80px;
+    width: 90px;
     height: 2px;
     background-color: #141313;
     opacity: 0.3;
     transform: rotate(-90deg);
     position: absolute;
-    right: -25px;
-    top: 175px;
+    right: -30px;
+    top: 185px;
     
 }
 /* home part end */
