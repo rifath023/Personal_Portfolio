@@ -13,9 +13,6 @@ nav{
 nav h1{
     margin-bottom: 10px;
 }
-#check{
-    display: none;
-}
 #check:checked~.menu{
     display: block;
 }

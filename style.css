@@ -36,6 +36,9 @@ nav h1{
 
     border-bottom: 2px solid #fff;
 }
+#check{
+    display: none;
+}
 nav .menu ul li a{
     text-decoration: none;
     color: white;
