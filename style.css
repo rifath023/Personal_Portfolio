@@ -154,11 +154,9 @@ section{
 
 .home .left p span{
     color: #141313;
-    font-family: IBM Plex Sans;
     font-size: 20px;
     font-style: italic;
     line-height: 32px; /* 100% */
-    letter-spacing: 2px;
 }
 .home .left p{
     color: #141313;
@@ -168,6 +166,7 @@ section{
     font-weight: 400;
     line-height: 32px;
     letter-spacing: -0.96px;
+    letter-spacing: 3px;
 }
 .home .left button{
     display: inline-flex;
@@ -220,6 +219,7 @@ section{
 
 .right img{
  width: 400px;
+ 
 }
 .home .icon {
     margin-top: -120px;
@@ -245,3 +245,4 @@ section{
     
 }
 /* home part end */
+

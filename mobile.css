@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+/* nav part started from here  */
+nav{
+    width: 100%;
+    height: 10%;
+    padding: 25px 10px 25px 25px;
+    position: static;
+}
+nav h1{
+    margin-bottom: 10px;
+}
+#check{
+    display: none;
+}
+#check:checked~.menu{
+    display: block;
+}
+nav .menu{
+    display: none;
+}
+nav .menu ul{
+    display: block;
+    text-align: center;
+    column-gap: 5px;
+    margin-bottom: -15px;
+}
+nav .icon{
+    position: absolute;
+    top: 100%;
+}
+nav footer{
+    /* display: none; */
+    position: absolute;
+    bottom: -240%;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav footer p{
+    color: white;
+}
+/* nav part ended here  */
+section{
+    /* margin-left: -25%; */
+    height: 100vh;
+    width: 400vh;
+}
+/* home part start */
+.home{
+    display: flex;
+    flex-direction: column-reverse;
+     margin-left: -150%;
+    margin-top: 30px;
+}
+.common-side{
+    width: 400px;
+    margin-top: 20px;
+}
+.home .left h1{
+    font-size: 40px;
+    line-height: 50px; /* 88.235% */
+    margin-bottom: 10px;
+}
+.home h1::after{
+    width: 82px;
+    height: 20px;
+    top: 28%;
+    left: -2%;
+}
+.home .left p span{
+    font-size: 15px;
+}
+.home .left p{
+    font-size: 15px;
+}
+.home .left button{
+    display: inline-flex;
+    height: 40px;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.home .left .contact{
+    display: flex;
+    flex-direction: column;
+}
+.home .left .contact a svg{
+    width: 25px;
+    height: 25px;
+}
+.home .left .contact a{
+    margin: 10px;
+    font-size: 12px;
+    display: inline-flex;
+}
+.home .right{
+ /* margin-left: -50%; */
+}
+.home .right img{
+    width: 300px;
+    position: relative;
+   }
+.home .icon {
+    margin-top: 0px;
+    margin-right: 0px;
+    position: absolute;
+    right: 5%;
+    top: 90%;
+}
+.home .left{
+ margin: 0;
+}
