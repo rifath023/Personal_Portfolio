@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 /* nav part started from here  */
 nav{
@@ -52,9 +52,10 @@ section{
 }
 /* home part start */
 .home{
+    width: 400px;
     display: flex;
     flex-direction: column-reverse;
-     margin-left: -150%;
+     margin-left: 20%;
     margin-top: 30px;
 }
 .common-side{
@@ -62,7 +63,7 @@ section{
     margin-top: 20px;
 }
 .home .left h1{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px; /* 88.235% */
     margin-bottom: 10px;
 }
@@ -77,6 +78,7 @@ section{
 }
 .home .left p{
     font-size: 15px;
+    width: 340px;
 }
 .home .left button{
     display: inline-flex;
@@ -105,7 +107,7 @@ section{
  /* margin-left: -50%; */
 }
 .home .right img{
-    width: 300px;
+    width: 250px;
     position: relative;
    }
 .home .icon {
@@ -118,3 +120,6 @@ section{
 .home .left{
  margin: 0;
 }
+
+/* home part end */
+
