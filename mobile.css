@@ -56,7 +56,7 @@ section{
     display: flex;
     flex-direction: column-reverse;
      margin-left: 22%;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 .common-side{
     width: 400px;
@@ -123,3 +123,68 @@ section{
 
 /* home part end */
 
+/* about part start */
+.about .welcome{
+    margin-top:60px;
+    margin-left: -40px;
+    position: relative;
+}
+.about .welcome::before{
+    content: '';
+    display: block;
+    width: 100px;
+    border: 1px solid black;
+    opacity: 0.2;
+    position: absolute;
+    left: 150px;
+    top: -30px;
+}
+.about .welcome p{
+    font-size: 13px;
+}
+.about .welcome h1{
+    font-size: 30px;
+
+}
+
+.about .main{
+    grid-template-columns: 360px;
+}
+
+.about .main .grid-left img{
+    width: 250px;  
+    margin-left: 50px;
+}
+.about .main .grid-left::after{
+    left: 15%;
+
+}
+.about .main .grid-left .name{
+    font-size: 30px;
+}
+.about .main .grid-left p, .about .main .grid-left span{
+    font-size: 12px;
+ }
+ .about .main .grid-right .horizontal::after{
+    width: 350px;
+    left: -90%;
+ }
+ .about .main .grid-right{
+    margin-left: -70px;
+    gap: 10px;
+    grid-template-columns: 220px 220px;
+
+ }
+ .about .main .grid-right .right-footer svg{
+    width: 40px;
+    height: 40px;
+}
+.about .main .grid-right .right-footer{
+    max-width: 450px;
+    height: auto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 20px;
+}
+/* about part end */
