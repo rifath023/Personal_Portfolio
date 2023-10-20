@@ -169,7 +169,7 @@ p{
     letter-spacing: -0.96px;
     letter-spacing: 3px;
 }
-.home .left button{
+button{
     display: inline-flex;
     height: 56px;
     padding: 18px 40px;
@@ -191,7 +191,7 @@ p{
 
     border-radius: 10px;
 }
-.home .left button:hover{
+button:hover{
     background: linear-gradient(90deg, rgb(255, 0, 230) 0%, orange 32%);
     color: black;
 }
@@ -250,7 +250,7 @@ p{
 /* <!-- about part start --> */
 /* <!-- this is the welcome heading  --> */
 .about{
-    
+      
 }
 .about .welcome{
     margin-bottom:20px;
@@ -438,3 +438,105 @@ p{
 }
 
 /* <!-- left part of about section end --> */
+
+
+/* experience div */
+.experience{
+    position: absolute;
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: 500px;
+    flex-shrink: 0;
+    background: linear-gradient(270deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* experience left side  */
+.experience-left-div{
+    margin: 30px;
+}
+.experience-left-div .title{
+    color: #FFF;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+.experience-left-div .my-experience{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 116.667% */
+    text-transform: uppercase;
+    
+}
+.experience-left-div .des{
+    width: 400px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: normal;
+}
+
+/* experience right side */
+.experience-right-div{
+    margin: 30px;
+}
+
+.experience-right-div .ex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.ex div{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ex div .date{
+    color: #FFF;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+.ex div .company{
+    color: #FFF;
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: normal;
+}
+.ex h1{
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 150% */
+    text-transform: uppercase;
+}
+.experience-right-div .ex::after{
+    margin: 10px;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    opacity: 0.2;
+    background-color: #fff;
+}
+/* experience div end*/
+/* <!-- about part ending here --> */
