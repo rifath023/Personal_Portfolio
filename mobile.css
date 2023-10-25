@@ -32,7 +32,7 @@ nav .icon{
 nav footer{
     /* display: none; */
     position: absolute;
-    bottom: -240%;
+    bottom: -550%;
     left: 0;
     background: #000;
     width: 100%;
@@ -187,4 +187,50 @@ section{
     font-weight: 500;
     padding: 20px;
 }
+/* <!-- left part of about section end --> */
+/* experience div */
+.experience{
+    flex-direction: column;
+    height: 800px;
+    left: 6%;
+    /* transform: translateX(50%);
+    left: -50%; */
+    justify-content: space-between;
+}
+
+/* experience left side  */
+.experience-left-div{
+    width: 250px;
+}
+.experience-left-div .my-experience{
+    font-size: 1.5rem; 
+}
+.experience-left-div .des{
+    max-width: 250px;
+    font-size: 14px;
+    line-height: normal; /* 155.556% */
+}
+
+
+/* experience right side */
+.experience-right-div{
+    width: 250px;
+}
+.ex div{
+    width: 250px;
+}
+.ex div .date{
+    font-size: 13px;
+}
+.ex div .company{
+    color: #FFF;
+
+}
+.ex h1{
+    font-size: 1.2rem; 
+}
+.experience-right-div .ex::after{
+    width: 240px;
+}
+/* experience div end*/
 /* about part end */
