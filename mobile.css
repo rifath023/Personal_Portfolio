@@ -1,236 +1,33 @@
-body{
-    display: flex;
-    flex-direction: column;
-    /* overflow-x: hidden; */
-}
-/* nav part started from here  */
-nav{
-    width: 100%;
-    height: 10%;
-    padding: 25px 10px 25px 25px;
-    position: static;
-}
-nav h1{
-    margin-bottom: 10px;
-}
-#check:checked~.menu{
-    display: block;
-}
-nav .menu{
-    display: none;
-}
-nav .menu ul{
-    display: block;
-    text-align: center;
-    column-gap: 5px;
-    margin-bottom: -15px;
-}
-nav .icon{
-    position: absolute;
-    top: 60%;
-}
-nav footer{
-    /* display: none; */
-    position: absolute;
-    bottom: -550%;
-    left: 0;
-    background: #000;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-nav footer p{
-    color: white;
-}
-/* nav part ended here  */
-section{
-    /* margin-left: -25%; */
-    height: 100vh;
-    width: 400vh;
-}
-/* home part start */
-.home{
-    width: 400px;
-    display: flex;
-    flex-direction: column-reverse;
-     margin-left: 22%;
-    margin-top: 50px;
-}
-.common-side{
-    width: 400px;
-    margin-top: 20px;
-}
-.home .left h1{
-    font-size: 35px;
-    line-height: 50px; /* 88.235% */
-    margin-bottom: 10px;
-}
-.home h1::after{
-    width: 82px;
-    height: 20px;
-    top: 28%;
-    left: -2%;
-}
-.home .left p span{
-    font-size: 15px;
-}
-.home .left p{
-    font-size: 15px;
-    width: 340px;
-}
-.home .left button{
-    display: inline-flex;
-    height: 40px;
-    padding: 10px 15px;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 500;
-    margin: 20px 0;
-}
-.home .left .contact{
-    display: flex;
-    flex-direction: column;
-}
-.home .left .contact a svg{
-    width: 25px;
-    height: 25px;
-}
-.home .left .contact a{
-    margin: 10px;
-    font-size: 12px;
-    display: inline-flex;
-}
-.home .right{
- /* margin-left: -50%; */
-}
-.home .right img{
-    width: 250px;
-    position: relative;
-   }
-.home .icon {
-    margin-top: 0px;
-    margin-right: 0px;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-}
-.home .left{
- margin: 0;
-}
-
-/* home part end */
-
-/* about part start */
-.about .welcome{
-    margin-top:60px;
-    margin-left: -40px;
-    position: relative;
-}
-.about .welcome::before{
-    content: '';
-    display: block;
-    width: 100px;
-    border: 1px solid black;
-    opacity: 0.2;
-    position: absolute;
-    left: 150px;
-    top: -30px;
-}
-.about .welcome p{
-    font-size: 13px;
-}
-.about .welcome h1{
-    font-size: 30px;
-
-}
-
-.about .main{
-    grid-template-columns: 360px;
-}
-
-.about .main .grid-left img{
-    width: 250px;  
-    margin-left: 50px;
-}
-.about .main .grid-left::after{
-    left: 15%;
-
-}
-.about .main .grid-left .name{
-    font-size: 30px;
-}
-.about .main .grid-left p, .about .main .grid-left span{
-    font-size: 12px;
- }
- .about .main .grid-right .horizontal::after{
-    width: 350px;
-    left: -90%;
- }
- .about .main .grid-right{
-    margin-left: -70px;
-    gap: 10px;
-    grid-template-columns: 220px 220px;
-
- }
- .about .main .grid-right .right-footer svg{
-    width: 40px;
-    height: 40px;
-}
-.about .main .grid-right .right-footer{
-    max-width: 450px;
-    height: auto;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 500;
-    padding: 20px;
-}
-/* <!-- left part of about section end --> */
-/* experience div */
-.experience{
-    flex-direction: column;
-    height: 800px;
-    left: 6%;
-    /* transform: translateX(50%);
-    left: -50%; */
-    justify-content: space-between;
-}
-
-/* experience left side  */
-.experience-left-div{
-    width: 250px;
-}
-.experience-left-div .my-experience{
-    font-size: 1.5rem; 
-}
-.experience-left-div .des{
-    max-width: 250px;
-    font-size: 14px;
-    line-height: normal; /* 155.556% */
-}
-
-
-/* experience right side */
-.experience-right-div{
-    width: 250px;
-}
-.ex div{
-    width: 250px;
-}
-.ex div .date{
-    font-size: 13px;
-}
-.ex div .company{
-    color: #FFF;
-
-}
-.ex h1{
-    font-size: 1.2rem; 
-}
-.experience-right-div .ex::after{
-    width: 240px;
-}
-/* experience div end*/
-/* about part end */
+/* Mobile / tablet overrides — loaded only under 768px */
+body{display:block;overflow-x:hidden}
+nav{width:100%;height:auto;min-height:64px;position:sticky;top:0;padding:12px 16px;gap:12px}
+.nav-top{width:100%}
+.logo span{font-size:18px;text-align:left;border-bottom:none;padding-bottom:0}
+.hamburger{display:flex}
+nav .menu{display:none;width:100%}
+#check:checked ~ .menu{display:block}
+nav .menu ul{gap:4px}
+nav .menu ul li a{display:block;padding:14px 4px;min-height:48px}
+nav .icon{margin-top:0}
+nav .icon a,.home .side-social a{width:44px;height:44px;font-size:18px}
+nav footer{display:none}
+main{margin-left:0;width:100%}
+section,.experience{padding:32px 18px;min-height:auto}
+.home{flex-direction:column-reverse;align-items:flex-start}
+.common-side{max-width:100%}
+.home .left h1{font-size:34px;line-height:1.2}
+.home .left p{font-size:16px}
+.btn{min-height:44px;padding:10px 18px;font-size:13px;margin:18px 0}
+.home .left .contact{flex-direction:column;align-items:flex-start}
+.home .right img{width:min(280px,80vw)}
+.home .side-social{position:absolute;right:14px;top:38%;flex-direction:column;padding-bottom:0}
+.home .side-social::after{display:none}
+#home{position:relative;padding-right:60px}
+.about .main{grid-template-columns:1fr}
+.about .main .grid-left{max-width:420px}
+.about .main .grid-left img{max-width:min(300px,80vw);margin-inline:auto}
+.about .main .grid-left::after{top:46%}
+.right-footer{font-size:15px;padding:18px}
+.experience{flex-direction:column;align-items:flex-start}
+.experience-left-div,.experience-right-div{max-width:100%}
+.cards{grid-template-columns:1fr}
